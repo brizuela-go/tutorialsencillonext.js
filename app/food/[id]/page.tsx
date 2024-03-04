@@ -1,7 +1,10 @@
 async function getFood(id: string) {
-  const res = await fetch(`http://localhost:3000/api/food/getFood/${id}`, {
-    cache: "no-cache",
-  });
+  const res = await fetch(
+    `https://tutorialsencillonext-js.vercel.app/api/food/getFood/${id}`,
+    {
+      cache: "no-cache",
+    }
+  );
   const food = await res.json();
   return food;
 }

@@ -1,7 +1,10 @@
 async function getHello() {
-  const res = await fetch(`http:localhost:3000/api/hello`, {
-    cache: "no-cache",
-  });
+  const res = await fetch(
+    `https://tutorialsencillonext-js.vercel.app/api/hello`,
+    {
+      cache: "no-cache",
+    }
+  );
   return res.json();
 }
 
